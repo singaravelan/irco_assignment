@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "id": "decision-20261127-001",
+      "timestamp": "2026-11-27T12:57:50Z",
+      "decision": "Introduce the journal_bookkeeper skill to record important user- or AI-authored project decisions in an append-only JSON log under evidence/.",
+      "source": "user",
+      "rationale": "Important decisions and their provenance should remain reviewable alongside the project's other submission evidence.",
+      "alternatives": [],
+      "evidence": [
+        ".github/skills/journal_bookkeeper/SKILL.md",
+        "evidence/decision-log.json"
+      ]
+    }
+  ]
+}
