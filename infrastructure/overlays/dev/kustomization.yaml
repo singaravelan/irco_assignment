@@ -1,0 +1,18 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: dev
+
+resources:
+  - namespace.yaml
+  - ../../base
+
+generatorOptions:
+  disableNameSuffixHash: true
+
+secretGenerator:
+  - name: postgres-credentials
+    literals:
+      - POSTGRES_USER=ds_candidate
+      - POSTGRES_PASSWORD=ds_candidate_pw
+      - POSTGRES_DB=ecommerce
